@@ -12,10 +12,14 @@ publish:
 
 package-install:
 	python3 -m pip install dist/*.whl --force-reinstall
+
 lint:
 	poetry run flake8 brain_games
 
-brain_even:
+brain-even:
 	poetry run brain-even
 
-.PHONY: install brain-games build publish package-install lint brain-even
+brain-calc:
+	poetry run brain-calc
+
+.PHONY: install brain-games build publish package-install lint brain-even brain-calc
