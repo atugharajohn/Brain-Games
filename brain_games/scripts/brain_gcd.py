@@ -3,6 +3,7 @@
 import brain_games.game_logic
 import brain_games.games.gcd
 
+
 def main():
     brain_games.game_logic.welcome_user()
     print('Find the greatest common divisor of given numbers.')
