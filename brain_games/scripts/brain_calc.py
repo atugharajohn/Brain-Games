@@ -6,7 +6,6 @@ import brain_games.games.calc
 
 
 def main():
-    print("Welcome to the Brain Games!")
     brain_games.game_logic.welcome_user()
     print('What is the result of the expression?')
     brain_games.games.calc.calculator()

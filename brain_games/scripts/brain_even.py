@@ -5,7 +5,6 @@ import brain_games.games.even
 
 
 def main():
-    print("Welcome to the Brain Games!")
     brain_games.game_logic.welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     brain_games.games.even.is_even()
