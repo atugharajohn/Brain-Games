@@ -1,17 +1,11 @@
 #!/usr/bin/env python3
 
-import brain_games.game_logic
-import brain_games.games.progression
+from brain_games.game_logic import play
+from brain_games.games import progression
 
 
 def main():
-    brain_games.game_logic.welcome_user()
-    print('What number is missing in the progression?')
-    brain_games.games.progression.a_progression()
-    while brain_games.game_logic.current_score < 3 \
-        and brain_games.game_logic.current_score \
-            != brain_games.game_logic.last_score:
-        brain_games.games.progression.a_progression()
+    play(progression)
 
 
 if __name__ == '__main__':

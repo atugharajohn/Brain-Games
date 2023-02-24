@@ -1,30 +1,26 @@
 import prompt
-
-current_score = 0
-last_score = 0
-name = ''
+from brain_games.cli import welcome_user
 
 
-def welcome_user():
-    print("Welcome to the Brain Games!")
-    global name
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
+def play(game):
+    score = 0
+    count_of_game = 3
+    name = welcome_user()
+    game.describe_game()
 
+    while True:
+        question, correct_answer = game.get_question_and_answer()
+        print(f'Question: {question}')
+        answer = prompt.string('Your answer: ')
 
-def user_answers(question, correct_answer):
-    print(f'Question: {question}')
-    answer = prompt.string('Your answer: ')
-    global current_score, last_score
+        if answer == correct_answer:
+            print('Correct!')
+            score += 1
+        else:
+            print(f"'{answer}' is wrong answer ;(. Correct answer was "
+                  f"'{correct_answer}'.\nLet's try again, {name}!")
+            break
 
-    if answer == correct_answer:
-        print('Correct!')
-        last_score = current_score
-        current_score += 1
-
-        if current_score == 3:
-            print(f'Congratulations, {name}!')
-    else:
-        last_score = current_score
-        print(f"'{answer}' is wrong answer ;(. Correct answer was "
-              f"'{correct_answer}'.\nLet's try again, {name}!")
+        if score == count_of_game:
+                print(f'Congratulations, {name}!')
+                break

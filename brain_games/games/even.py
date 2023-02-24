@@ -1,13 +1,20 @@
 from random import randint
-import brain_games.game_logic
 
 
-def is_even():
-    question = randint(-100, 100)
+def describe_game():
+    print('Answer "yes" if the number is even, otherwise answer "no".')
 
-    if question % 2 == 0:
-        correct_answer = 'yes'
+
+def is_even(number):
+    if number % 2 == 0:
+        answer = 'yes'
     else:
-        correct_answer = 'no'
+        answer = 'no'
+    return answer
 
-    brain_games.game_logic.user_answers(question, correct_answer)
+
+def get_question_and_answer():
+    question = randint(1, 100)
+    correct_answer = is_even(question)
+
+    return question, correct_answer
