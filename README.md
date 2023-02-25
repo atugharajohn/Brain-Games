@@ -1,4 +1,4 @@
-# :zap: **Brain Games**
+# :zap: **Brain Games** :zap:
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/FoggySmile/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/FoggySmile/python-project-49/actions)
