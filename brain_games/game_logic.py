@@ -22,5 +22,5 @@ def play(game):
             break
 
         if score == count_of_game:
-                print(f'Congratulations, {name}!')
-                break
+            print(f'Congratulations, {name}!')
+            break

@@ -10,7 +10,7 @@ def describe_game():
 def calculate(number1, number2, picked_operator):
 
     if picked_operator == '+':
-       answer = operator.add(number1, number2)
+        answer = operator.add(number1, number2)
 
     if picked_operator == '-':
         answer = operator.sub(number1, number2)

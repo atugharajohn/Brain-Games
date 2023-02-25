@@ -17,6 +17,7 @@ def build_progression():
         list_progr.append(elem)
     return list_progr
 
+
 def get_question_and_answer():
     result_progression = build_progression()
     random_index = random.randrange(len(result_progression))

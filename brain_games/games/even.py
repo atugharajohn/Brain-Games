@@ -11,7 +11,6 @@ def is_even(number):
     return 'no'
 
 
-
 def get_question_and_answer():
     question = randint(1, 100)
     correct_answer = is_even(question)

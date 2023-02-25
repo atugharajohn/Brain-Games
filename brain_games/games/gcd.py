@@ -12,7 +12,7 @@ def find_gcd(number1, number2):
             number1 = number1 % number2
         else:
             number2 = number2 % number1
-    
+
     return number1 + number2
 
 
