@@ -7,10 +7,9 @@ def describe_game():
 
 def is_even(number):
     if number % 2 == 0:
-        answer = 'yes'
-    else:
-        answer = 'no'
-    return answer
+        return 'yes'
+    return 'no'
+
 
 
 def get_question_and_answer():

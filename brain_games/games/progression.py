@@ -22,7 +22,7 @@ def get_question_and_answer():
     random_index = random.randrange(len(result_progression))
     correct_answer = str(result_progression[random_index])
 
-    for index in range(len(result_progression) - 1):
+    for index in range(len(result_progression)):
         if index == random_index:
             result_progression[index] = '..'
 
