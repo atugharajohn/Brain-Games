@@ -3,8 +3,7 @@ import operator
 from random import randint
 
 
-def describe_game():
-    print('What is the result of the expression?')
+DESCRIPTION = 'What is the result of the expression?'
 
 
 def calculate(number1, number2, picked_operator):

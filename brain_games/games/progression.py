@@ -2,18 +2,17 @@ import random
 from random import randint
 
 
-def describe_game():
-    print("What number is missing in the progression?")
+DESCRIPTION = 'What number is missing in the progression?'
 
 
 def build_progression():
-    d = randint(1, 10)
-    a1 = randint(1, 50)
-    n = randint(6, 11)
-    a_n = a1 + (n - 1) * d
+    difference = randint(1, 10)
+    first_elem = randint(1, 50)
+    number_of_elem = randint(6, 11)
+    n_elem = first_elem + (number_of_elem - 1) * difference
     list_progr = []
 
-    for elem in range(a1, a_n, d):
+    for elem in range(first_elem, n_elem, difference):
         list_progr.append(elem)
     return list_progr
 
@@ -22,11 +21,7 @@ def get_question_and_answer():
     result_progression = build_progression()
     random_index = random.randrange(len(result_progression))
     correct_answer = str(result_progression[random_index])
-
-    for index in range(len(result_progression)):
-        if index == random_index:
-            result_progression[index] = '..'
-
+    result_progression[random_index] = '..'
     question = " ".join(map(str, result_progression))
 
     return question, correct_answer
