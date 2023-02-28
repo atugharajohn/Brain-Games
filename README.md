@@ -22,7 +22,7 @@ After installation, you can play games with the following commands:
 
   * ```brain-even``` - determine if the number is even
   * ```brain-calc``` - determine the result of a mathematical expression
-  * ```brain-gcd``` - determine [the greater common divisor](https://en.wikipedia.org/wiki/Greatest_common_divisor) of two numbers
+  * ```brain-gcd``` - determine [the greatest common divisor](https://en.wikipedia.org/wiki/Greatest_common_divisor) of two numbers
   * ```brain-progression``` - determine missing number in [arithmetic progression](https://en.wikipedia.org/wiki/Arithmetic_progression)
   * ```brain-prime``` - determine if the number is [prime](https://en.wikipedia.org/wiki/List_of_prime_numbers)
 ___
